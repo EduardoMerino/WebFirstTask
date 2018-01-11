@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112297869-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,6 +12,21 @@
         gtag('js', new Date());
         gtag('config', 'UA-112297869-1');
     </script>
+
+    <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAwkJJijdmy-Sa6_jlEKiJTcrDjCCuaHFs",
+      authDomain: "firsttaskweb.firebaseapp.com",
+      databaseURL: "https://firsttaskweb.firebaseio.com",
+      projectId: "firsttaskweb",
+      storageBucket: "firsttaskweb.appspot.com",
+      messagingSenderId: "825622771161"
+    };
+    firebase.initializeApp(config);
+  </script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
@@ -35,20 +51,14 @@
             </ul>
             <div class="Fso">
                 <h3>Idea for the project:</h3>
+                <button class="fireAnswer"> IDEA </button>
                 <ul>
-                    <li>Bootsrap</li>
-                    <li>Foundation</li>
-                    <li>JavaScript/Jquery</li>
-                    <li>Firebase</li>
+                  <li id="idea1"></li>
+                  <li id="idea2"></li>
                 </ul>
-                <br>
-            </div>
-
-            <div class="Fso">
-                <h3>Web related tools that you don't like </h3>
-                I dont know a lot of web tools, so can't really complain.
-
 
             </div>
-        </div>
+
 </body>
+
+<script src = "fire.js"></script>
